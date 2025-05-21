@@ -26,24 +26,24 @@ class UserReportServiceTest {
         userReportService = new UserReportService(userRepository);
     }
 
-    // @Test
-    // void testGeneratePdfReturnsByteArray() {
-    //     User user1 = new User();
-    //     user1.setUserId(1L);
-    //     user1.setUserName("user1");
-    //     user1.setFullName("User One");
+    @Test
+    void testGeneratePdfReturnsByteArray() {
+        User user1 = new User();
+        user1.setUserId(1L);
+        user1.setUserName("user1");
+        user1.setFullName("User One");
 
-    //     User user2 = new User();
-    //     user2.setUserId(2L);
-    //     user2.setUserName("user2");
-    //     user2.setFullName("User Two");
+        User user2 = new User();
+        user2.setUserId(2L);
+        user2.setUserName("user2");
+        user2.setFullName("User Two");
 
-    //     List<User> mockUsers = List.of(user1, user2);
-    //     when(userRepository.findAll()).thenReturn(mockUsers);
+        List<User> mockUsers = List.of(user1, user2);
+        when(userRepository.findAll()).thenReturn(mockUsers);
 
-    //     byte[] pdfBytes = userReportService.generatePdf();
+        byte[] pdfBytes = userReportService.generatePdf();
 
-    //     assertNotNull(pdfBytes, "PDF bytes should not be null");
-    //     assertTrue(pdfBytes.length > 0, "PDF bytes should not be empty");
-    // }
+        assertNotNull(pdfBytes, "PDF bytes should not be null");
+        assertTrue(pdfBytes.length > 0, "PDF bytes should not be empty");
+    }
 }

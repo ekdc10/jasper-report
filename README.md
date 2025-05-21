@@ -2,7 +2,6 @@
 
 A web-based **User Management** application built using **Spring Boot**, **Vaadin**, **JasperReports**, and **PostgreSQL**, with PDF export capability.
 
-
 ## Features
 - User CRUD with Vaadin
 - REST API endpoint to export users as PDF
@@ -66,5 +65,9 @@ spring.jpa.show-sql=true
     docker run -p 8080:8080 user-app
 - Locally
     mvn spring-boot:run
+
+## Issue
+ - JasperReports fails to load the .jrxml file during deployment.
+   I use Render to deploy and test the project because I can't run it on my local machine due to installation restrictions.
 
 
