@@ -52,12 +52,4 @@ public class UserReportService {
         }
     }
 
-    /**
-     * Load compiled .jasper file from resources.
-     */
-    private InputStream getReportStream(String path) {
-        ClassLoader classLoader = getClass().getClassLoader();
-        return classLoader.getResourceAsStream(path);
-    }
-
 }
