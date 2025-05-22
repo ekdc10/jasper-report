@@ -29,12 +29,8 @@
 			<rightPen lineWidth="0.5" lineColor="#000000"/>
 		</box>
 	</style>
-	<dataset name="Dataset1" uuid="10687190-e9ca-4082-bf90-7c20b4e4820b">
-		<query language="sql"><![CDATA[]]></query>
-		<field name="userName" class="java.lang.String"/>
-		<field name="fullName" class="java.lang.String"/>
-	</dataset>
-	<query language="SQL"><![CDATA[]]></query>
+	<field name="userName" class="java.lang.String"/>
+	<field name="fullName" class="java.lang.String"/>
 	<background splitType="Stretch"/>
 	<title height="79" splitType="Stretch">
 		<element kind="staticText" uuid="200e8553-ce94-44af-aa98-2c08079b6a54" x="2" y="28" width="550" height="30" fontSize="25.0" hTextAlign="Center">
